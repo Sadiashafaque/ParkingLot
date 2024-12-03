@@ -1,10 +1,12 @@
 package com.practice.models;
 
+import java.util.Date;
+
 public class Ticket extends BaseModel{
     private Vehicle vehicle;
     private ParkingSpot parkingSpot;
     private Gate entryGate;
-
+    private Date entryTime;
 
     public Gate getEntryGate() {
         return entryGate;
@@ -28,5 +30,13 @@ public class Ticket extends BaseModel{
 
     public void setVehicle(Vehicle vehicle) {
         this.vehicle = vehicle;
+    }
+
+    public Date getEntryTime() {
+        return entryTime;
+    }
+
+    public void setEntryTime(Date entryTime) {
+        this.entryTime = entryTime;
     }
 }

@@ -8,6 +8,6 @@ public class RandomSpotAssignmentStrategy implements SpotAssignmentStrategy{
 
     @Override
     public ParkingSpot findEmptySpot(ParkingLot parkingLot, VehicleType vehicleType) {
-return null;
+        return null;
     }
 }
